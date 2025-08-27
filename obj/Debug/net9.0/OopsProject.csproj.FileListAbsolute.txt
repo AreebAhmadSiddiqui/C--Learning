@@ -1,0 +1,14 @@
+C:\Users\saree\Desktop\Learnings\C#\CsharpProjects\OopsProject\bin\Debug\net9.0\OopsProject.exe
+C:\Users\saree\Desktop\Learnings\C#\CsharpProjects\OopsProject\bin\Debug\net9.0\OopsProject.deps.json
+C:\Users\saree\Desktop\Learnings\C#\CsharpProjects\OopsProject\bin\Debug\net9.0\OopsProject.runtimeconfig.json
+C:\Users\saree\Desktop\Learnings\C#\CsharpProjects\OopsProject\bin\Debug\net9.0\OopsProject.dll
+C:\Users\saree\Desktop\Learnings\C#\CsharpProjects\OopsProject\bin\Debug\net9.0\OopsProject.pdb
+C:\Users\saree\Desktop\Learnings\C#\CsharpProjects\OopsProject\obj\Debug\net9.0\OopsProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saree\Desktop\Learnings\C#\CsharpProjects\OopsProject\obj\Debug\net9.0\OopsProject.AssemblyInfoInputs.cache
+C:\Users\saree\Desktop\Learnings\C#\CsharpProjects\OopsProject\obj\Debug\net9.0\OopsProject.AssemblyInfo.cs
+C:\Users\saree\Desktop\Learnings\C#\CsharpProjects\OopsProject\obj\Debug\net9.0\OopsProject.csproj.CoreCompileInputs.cache
+C:\Users\saree\Desktop\Learnings\C#\CsharpProjects\OopsProject\obj\Debug\net9.0\OopsProject.dll
+C:\Users\saree\Desktop\Learnings\C#\CsharpProjects\OopsProject\obj\Debug\net9.0\refint\OopsProject.dll
+C:\Users\saree\Desktop\Learnings\C#\CsharpProjects\OopsProject\obj\Debug\net9.0\OopsProject.pdb
+C:\Users\saree\Desktop\Learnings\C#\CsharpProjects\OopsProject\obj\Debug\net9.0\OopsProject.genruntimeconfig.cache
+C:\Users\saree\Desktop\Learnings\C#\CsharpProjects\OopsProject\obj\Debug\net9.0\ref\OopsProject.dll
