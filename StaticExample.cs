@@ -7,7 +7,7 @@ namespace OopsProject
         static internal int a = 20;
         static internal void Hello()
         {
-           Console.WriteLine("I am Hello");
+           Console.WriteLine("I am Hello ");
         }
     }
 }
