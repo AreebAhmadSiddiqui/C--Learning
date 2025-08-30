@@ -432,3 +432,4 @@ Method dono classes mein hai + virtual/override	✅ B ka method run hoga
 Method dono classes mein hai (no virtual)	    ✅ A ka method run hoga
 Method sirf A mein hai	                        ✅ A ka method run hoga
 Method sirf B mein hai	                        ❌ Compile error
+

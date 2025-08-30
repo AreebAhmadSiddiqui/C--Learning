@@ -731,3 +731,119 @@ namespace OopsProject
 ### Exception Handling
 
 try - catch - finally ki kahani
+
+
+# Advanced Topics
+
+### Delegates
+
+- Its a type safe function pointer
+- It holds the reference of a method and then calls the method for execution
+
+
+```csharp
+Think of a delegate as a type-safe function pointer. It's a reference type that defines a method signature—what the return type and parameters of a method must look like.
+
+You can then use this delegate to point to (or "call") any method that matches that signature.
+
+Analogy: A job description (the delegate) defines the required experience and skills (the parameters and return type). Any candidate (method) that meets those requirements can be assigned to that job.
+
+2. How to Use Delegates: A Step-by-Step Guide
+Step 1: Declaration
+First, you define the delegate type itself. This is like creating a blueprints for what kind of methods you can use.
+
+csharp
+// This delegate can point to any method that takes a string and returns void.
+public delegate void PrintDelegate(string message);
+
+// This delegate can point to any method that takes two ints and returns an int.
+public delegate int MathOperationDelegate(int a, int b);
+Step 2: Instantiation & Assignment
+Next, you create an instance of that delegate and point it to a specific method.
+
+csharp
+// A method that matches the PrintDelegate signature
+public void PrintToConsole(string text)
+{
+    Console.WriteLine("Console: " + text);
+}
+
+// A method that matches the MathOperationDelegate signature
+public int Add(int x, int y)
+{
+    return x + y;
+}
+
+// In your main code:
+PrintDelegate printer = new PrintDelegate(PrintToConsole);
+// Or, much more commonly using just assignment (C# 2.0+):
+PrintDelegate printer = PrintToConsole;
+
+MathOperationDelegate calculator = Add;
+Step 3: Invocation
+Finally, you use the delegate instance to call the method it points to.
+
+csharp
+printer("Hello, World!"); // Output: "Console: Hello, World!"
+
+int result = calculator(5, 3);
+Console.WriteLine(result); // Output: 8
+3. The Real Power: Multicast Delegates
+Delegates become incredibly powerful because they can be multicast. This means a single delegate instance can point to multiple methods and invoke them all, one after the other, when called. Use the += and -= operators to add/remove methods.
+
+csharp
+public void PrintToConsole(string text) => Console.WriteLine("Console: " + text);
+public void PrintToFile(string text) => File.WriteAllText("output.txt", "File: " + text);
+
+// Create a delegate and add multiple methods
+PrintDelegate multiPrinter = PrintToConsole;
+multiPrinter += PrintToFile; // Now it points to both methods
+
+// When invoked, BOTH methods are called in order.
+multiPrinter("This goes to both!"); // Writes to console AND creates a file.
+
+// Remove a method
+multiPrinter -= PrintToFile;
+Important: The return type matters. If a multicast delegate has a non-void return type (like MathOperationDelegate), only the value from the last invoked method is returned. The others are lost, which is usually not what you want. Multicast delegates are most useful with void return types.
+
+4. Modern Shortcuts: Action<> and Func<> Delegates
+You rarely need to declare your own delegate types like public delegate void MyDelegate(...) anymore. The .NET framework provides generic delegates that cover most scenarios:
+
+Action<>: For methods that return void.
+
+Action -> points to a void method with no parameters.
+
+Action<int, string> -> points to a void method that takes an int and a string.
+
+Func<>: For methods that return a value. The last type parameter is always the return type.
+
+Func<int> -> points to a method with no parameters that returns an int.
+
+Func<int, string, bool> -> points to a method that takes an int and a string and returns a bool.
+
+Example using Action and Func:
+
+csharp
+// Instead of declaring a custom delegate, just use Action<string>
+Action<string> consoleAction = PrintToConsole;
+consoleAction("Using Action!");
+
+// Func for methods that return a value
+Func<int, int, int> mathFunc = Add;
+int result = mathFunc(10, 5); // result = 15
+
+// You can even use anonymous methods (lambda expressions) directly
+Func<int, int, int> multiplyFunc = (a, b) => a * b;
+int product = multiplyFunc(10, 5); // product = 50
+```
+
+### Anonymous delegates
+
+- Adding a methods functionality to the delegate
+- you can use a lambda expression
+
+
+### Event is a wrapper around Delegates
+
+- Wrapper to delegate
+- Similar to delegates , instead of calling delegate use event

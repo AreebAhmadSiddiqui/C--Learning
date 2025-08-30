@@ -12,3 +12,4 @@ C:\Users\saree\Desktop\Learnings\C#\CsharpProjects\OopsProject\obj\Debug\net9.0\
 C:\Users\saree\Desktop\Learnings\C#\CsharpProjects\OopsProject\obj\Debug\net9.0\OopsProject.pdb
 C:\Users\saree\Desktop\Learnings\C#\CsharpProjects\OopsProject\obj\Debug\net9.0\OopsProject.genruntimeconfig.cache
 C:\Users\saree\Desktop\Learnings\C#\CsharpProjects\OopsProject\obj\Debug\net9.0\ref\OopsProject.dll
+C:\Users\saree\Desktop\Learnings\C#\CsharpProjects\OopsProject\obj\Debug\net9.0\OopsProject.sourcelink.json
